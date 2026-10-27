@@ -145,3 +145,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-bet
   nav.top .links a{padding:6px 7px;font-size:.88rem}
   .belts{grid-template-columns:1fr 1fr}
 }
+
+/* road to black belt: the opponents */
+.mates-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:30px 0 12px}
+.mates-head h3{margin:0;font-size:1.9rem}
+.mates-head p{margin:0;font-weight:400;color:var(--muted)}
+.beltchip{width:56px;height:16px;border:3px solid var(--ink);border-radius:999px;flex:none}
+.beltchip.white{background:#fff}.beltchip.blue{background:#1f5fd1}.beltchip.purple{background:#6a2fa6}.beltchip.brown{background:#6b3f1f}.beltchip.black{background:#111}
+.mate{position:relative;background:var(--paper);border:3px solid var(--ink);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+.mate:nth-child(odd){transform:rotate(-.8deg)} .mate:nth-child(even){transform:rotate(.8deg)}
+.mate img{width:100%;aspect-ratio:1/1;object-fit:cover;border-bottom:3px solid var(--ink)}
+.mate .body{padding:12px 14px 14px}
+.mate h4{font-family:"Bangers",Impact,sans-serif;font-weight:400;letter-spacing:1.2px;font-size:1.5rem;margin:0;line-height:1.05}
+.mate .mtag{font-size:.82rem;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.5px;margin:2px 0 6px}
+.mate p{font-weight:400;margin:0;font-size:.97rem}
+.mate .badge{position:absolute;top:10px;right:10px;background:var(--yellow);color:var(--ink);border:2px solid var(--ink);font-family:"Bangers";letter-spacing:1px;padding:2px 10px;transform:rotate(4deg)}
+.mate.boss{border-color:var(--ink);box-shadow:6px 6px 0 var(--red)}
+.mate.locked .ph{aspect-ratio:2/1;display:grid;place-items:center;border-bottom:3px solid var(--ink);background:#111 radial-gradient(rgba(255,255,255,.12) 1.5px,transparent 2px) 0 0/10px 10px;
+  font-family:"Bangers";font-size:5rem;color:var(--yellow);-webkit-text-stroke:2px var(--ink)}
+@media (max-width:520px){ .g4.mates{grid-template-columns:repeat(2,1fr)} .mate h4{font-size:1.25rem} .mate p{font-size:.88rem} }
